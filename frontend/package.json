@@ -1,0 +1,24 @@
+{
+  "name": "vrk",
+  "version": "0.0.1",
+  "description": "This is an app for vkr.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo build",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndeyGordeev/VKR.git"
+  },
+  "author": "Andrey Gordeev <prolodgy1997@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndeyGordeev/VKR/issues"
+  },
+  "homepage": "https://github.com/AndeyGordeev/VKR#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
