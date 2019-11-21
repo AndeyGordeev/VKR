@@ -1,9 +1,14 @@
-const express = require("express");
+// Теперь, когда мы настроили сборку, 
+// можно по-человечески импортировать.
+import express from 'express'
+import template from './src/template'
 
-app = express();
+let app = express();
 
-app.listen(process.env.APP_FRONTEND_PORT);
+app.use('/dist', express.static('../dist'));
 
 app.get("*", (req, res) => {
-	res.send("Hello, World!")
+    res.send(template("VKR"));
 });
+
+app.listen(process.env.APP_FRONTEND_PORT);
